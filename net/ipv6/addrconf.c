@@ -213,7 +213,7 @@ static struct ipv6_devconf ipv6_devconf __read_mostly = {
 	.rtr_probe_interval	= 60 * HZ,
 #ifdef CONFIG_IPV6_ROUTE_INFO
 	.accept_ra_rt_info_min_plen = 0,
-	.accept_ra_rt_info_max_plen = 0,
+	.accept_ra_rt_info_max_plen = 128,
 #endif
 #endif
 	.proxy_ndp		= 0,
@@ -268,7 +268,7 @@ static struct ipv6_devconf ipv6_devconf_dflt __read_mostly = {
 	.rtr_probe_interval	= 60 * HZ,
 #ifdef CONFIG_IPV6_ROUTE_INFO
 	.accept_ra_rt_info_min_plen = 0,
-	.accept_ra_rt_info_max_plen = 0,
+	.accept_ra_rt_info_max_plen = 128,
 #endif
 #endif
 	.proxy_ndp		= 0,
